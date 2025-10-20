@@ -330,7 +330,7 @@ export default function Home() {
             <div className="flex items-center justify-center">
               <div className="flex items-center gap-2 text-lg font-semibold">
                 <MessageSquare className="w-6 h-6" />
-                OpenAI
+                Gemini
               </div>
             </div>
             <div className="flex items-center justify-center">
