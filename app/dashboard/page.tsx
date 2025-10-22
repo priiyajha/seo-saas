@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Plus, BarChart3, FileText, Sparkles, Loader2 } from "lucide-react";
 // import ReportsTable from "@/components/ReportsTable";
-// import { CountrySelector } from "@/components/ui/country-selector";
+import { CountrySelector } from "@/components/ui/country-selector";
 import { Authenticated, AuthLoading } from "convex/react";
 
 function Dashboard() {
@@ -86,11 +86,11 @@ function Dashboard() {
                     />
                   </div>
 
-                  {/*<CountrySelector*/}
-                  {/*  value={country}*/}
-                  {/*  onValueChange={setCountry}*/}
-                  {/*  disabled={isLoading}*/}
-                  {/*/>*/}
+                  <CountrySelector
+                    value={country}
+                    onValueChange={setCountry}
+                    disabled={isLoading}
+                  />
 
                   <div>
                     <Button
